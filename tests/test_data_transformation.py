@@ -39,7 +39,7 @@ def test_csv_format(output_file):
         return False
 
 # File path to the generated CSV (update as necessary)
-output_csv_file = '/Users/jrdegbe/Desktop/Traffic-task-GCP/data/traffic_data.csv'
+output_csv_file = 'C:\Users\acer\Documents\Files\sem2\DataMasters\DataEngineeringTrack\MySQL-GCS-BigQuery-Datapipeline\data\traffic_data.csv'
 
 # Run the test
 test_result = test_csv_format(output_csv_file)

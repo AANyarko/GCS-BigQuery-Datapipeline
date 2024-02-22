@@ -13,4 +13,4 @@ for _ in range(100):  # Example: 100 data points
     data.append([time, traffic])
 
 df = pd.DataFrame(data, columns=['time', 'traffic'])
-df.to_csv('/Users/jrdegbe/Desktop/Traffic-task-GCP/data//test_data.csv', index=False)
+df.to_csv('C:\Users\acer\Documents\Files\sem2\DataMasters\DataEngineeringTrack\MySQL-GCS-BigQuery-Datapipeline\data\test_data.csv', index=False)

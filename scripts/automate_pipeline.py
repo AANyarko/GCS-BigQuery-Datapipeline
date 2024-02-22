@@ -91,15 +91,15 @@ def load_data_from_gcs_to_bigquery(bucket_name, blob_name, dataset_id, table_id,
         logging.error(f"An error occurred: {e}")
 
 # Parameters for the data transformation
-input_file = '/Users/jrdegbe/Desktop/Traffic-task-GCP/data/traffic_spreadsheet.xls'
-output_file = '/Users/jrdegbe/Desktop/Traffic-task-GCP/data/traffic_data.csv'
+input_file = 'C:\Users\acer\Documents\Files\sem2\DataMasters\DataEngineeringTrack\MySQL-GCS-BigQuery-Datapipeline\data\traffic_spreadsheet.xls'
+output_file = 'C:\Users\acer\Documents\Files\sem2\DataMasters\DataEngineeringTrack\MySQL-GCS-BigQuery-Datapipeline\data\traffic_data.csv'
 
 # Convert and reformat the XLS file
 convert_and_reformat_xls_to_csv(input_file, output_file)
 
 # Parameters for uploading to GCS
 bucket_name = 'london_traffic_data_bucket'
-source_file_path = '/Users/jrdegbe/Desktop/Traffic-task-GCP/data/traffic_data.csv' 
+source_file_path = 'C:\Users\acer\Documents\Files\sem2\DataMasters\DataEngineeringTrack\MySQL-GCS-BigQuery-Datapipeline\data\traffic_data.csv' 
 destination_blob_name = 'traffic_data.csv'
 
 # Upload the file to GCS
